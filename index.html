@@ -12,13 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <img src="./logo.png" class="header__img" />
+      <img src="./logo.png" class="header__logo" />
       <nav class="header__nav">
-        <ul class="header__nav__list">
+        <ul class="header__nav__list header--nav--list--first">
           <li>Home</li>
           <li>Live Demo</li>
           <ul class="header__nav__list header--nav--list">
@@ -32,18 +33,28 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1>PET ACTIVITIES</h1>
-        <h2>Take a closer look</h2>
-        <h3 class="second-title">VIEW ALL</h3>
+      <section class="main-section">
+        <h1 class="main-section__first-title">PET ACTIVITIES</h1>
+        <div class="second-title">
+          <h2 class="second-title__closer-look">Take a closer look</h2>
+          <h3 class="second-title__view-all">VIEW ALL</h3>
+        </div>
         <div class="images">
-          <img src="./01.jpg" alt="Dog playing" class="images images--image1" />
+          <img
+            src="./01.jpg"
+            alt="Dog playing"
+            class="images__image image--image1"
+          />
           <img
             src="./02.jpg"
             alt="Cat sleeping"
-            class="images images--image2"
+            class="images__image image--image2"
           />
-          <img src="./03.jpg" alt="Dog running" class="images images--image2" />
+          <img
+            src="./03.jpg"
+            alt="Dog running"
+            class="images__image image--image2"
+          />
         </div>
       </section>
     </main>
